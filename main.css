@@ -33,6 +33,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    border: 1px solid #ffb3ff;
 }
 
 .content-frame {
@@ -45,9 +46,17 @@ main {
 .bio-frame {
     background: #151718;
     border-radius: 0.7rem;
-    height: 25rem;
     padding: 0.8rem;
-    width: 30%;
+    width: 23%;
+}
+
+.bio-frame img {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 14rem;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ffb3ff;
 }
 
 .social-frame {
