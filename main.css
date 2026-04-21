@@ -51,7 +51,6 @@ main {
 }
 
 .bio-frame img {
-    margin-top: 1rem;
     margin-bottom: 1rem;
     width: 14rem;
     max-width: 100%;
@@ -73,6 +72,53 @@ main {
     overflow-wrap: break-word;
 }
 
+.music-frame {
+    margin-top: 2rem;
+}
+
+.music-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 11px;
+    background-color: #1a1c1d;
+    border-radius: 12px;
+    width: 46%;
+    margin-top: 0.3rem;
+}
+
+.music-box img {
+    border-radius: 10px;
+    width: 5rem;
+    height: auto;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.song-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.song-artist {
+    margin: 0;
+    color: var(--main-color);
+
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    color: var(--main-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .footer-frame {
     background: #151718;
     border-radius: 0.7rem;
@@ -86,7 +132,8 @@ main {
 
 
 
-
 ::selection {
     background: #db65d528;
 }
+
+

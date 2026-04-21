@@ -16,8 +16,7 @@
             <div class="content-frame">
 
                 <div class="bio-frame">
-                    <h3>Bio</h3>
-                    <img src="assets/selfpic.jpg">
+                    <img src="assets/selfpic.jpg" alt="me in the alps">
 
                     <p><span class="bio-desc">Name</span>: shayaa / lumi</p>
                     <p><span class="bio-desc">Pronouns</span>: he/him</p>
@@ -29,8 +28,30 @@
                 <div class="social-frame">
                     <h2>Haii <span class="colored-text" style="font-family: 'Arial', sans-serif"><3</span></h2>
                     <br>
-                    <p>I'm shayaa or lumi, a silly developer and producer from switzerland focusing on creating useful programs.</p>
-                    <p>I love to mess with things, create new stuff, learn more and explore the world i live in.</p>
+                    <p>I'm shayaa or lumi, a silly developer and producer from Switzerland 
+                        focusing on creating useful programs, heavily distorted music and enjoying the swiss alps.
+                        <br><br>I love to mess with things, create new stuff, learn more and explore the world we live in.</p>
+
+                    <div class="music-frame">
+                        <h3>Favourite Song</h3>
+                        <div class="music-box">
+                        <img src="/assets/album covers/madewithhoney_300x300.jpg">
+                        <div class="song-info">
+                            <h3 class="song-title">Made with Honey</h3>
+                            <p class="song-artist">SPARKLEWOLF RADIO</p>
+                        </div>
+
+                        <button onclick="playFavSong()" class="play-btn" href="https://sparklewolfradio.bandcamp.com/track/made-with-honey">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                                <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.15"/>
+                                <path d="M10 8l6 4-6 4V8z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    </div>
+                    
+
                 </div>
 
 
@@ -45,6 +66,13 @@
 
         </div>
     </main>
+
+    <script>
+        function playFavSong() {
+            var audio = new Audio("assets/audio/SPARKLEWOLF RADIO - MADE WITH HONEY.mp3");
+            audio.play()
+        }
+    </script>
     
 </body>
 </html>
