@@ -119,6 +119,30 @@ main {
     cursor: pointer;
 }
 
+.song-time {
+    margin: 0;
+    font-size: 11px;
+    color: #888;
+}
+
+.progress-bar {
+    height: 5px;
+    background: #2e3032;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%; 
+    width: 0%;
+    background: var(--main-color);
+    border-radius: 4px 0 0 4px;
+    transition: width 0.25s linear;
+}
+
 .footer-frame {
     background: #151718;
     border-radius: 0.7rem;

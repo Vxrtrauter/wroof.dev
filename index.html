@@ -39,6 +39,10 @@
                         <div class="song-info">
                             <h3 class="song-title">Made with Honey</h3>
                             <p class="song-artist">SPARKLEWOLF RADIO</p>
+                            <p class="song-time" id="song-time">0:00 / 0:00</p>
+                            <div class="progress-bar" id="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
                         </div>
 
                         <button onclick="playFavSong()" class="play-btn" href="https://sparklewolfradio.bandcamp.com/track/made-with-honey">
@@ -68,10 +72,48 @@
     </main>
 
     <script>
-        function playFavSong() {
-            var audio = new Audio("assets/audio/SPARKLEWOLF RADIO - MADE WITH HONEY.mp3");
-            audio.play()
+        const favAudio = new Audio("assets/audio/SPARKLEWOLF RADIO - MADE WITH HONEY.mp3");
+        favAudio.volume = 0.2;
+
+        const playIcon = `<circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.15"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/>`;
+        const pauseIcon = `<circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.15"/><rect x="9.5" y="8" width="2" height="8" rx="1" fill="currentColor"/><rect x="13" y="8" width="2" height="8" rx="1" fill="currentColor"/>`;
+
+        function formatTime(s) {
+            const m = Math.floor(s / 60);
+            const sec = Math.floor(s % 60).toString().padStart(2, '0');
+            return `${m}:${sec}`;
         }
+
+        function playFavSong() {
+            const svg = document.querySelector(".play-btn svg");
+            if (favAudio.paused) {
+                favAudio.play().catch(() => {});
+                svg.innerHTML = pauseIcon;
+            } else {
+                favAudio.pause();
+                svg.innerHTML = playIcon;
+            }
+            favAudio.addEventListener("ended", () => {
+                svg.innerHTML = playIcon;
+            }, { once: true });
+        }
+
+        favAudio.addEventListener("loadedmetadata", () => {
+            document.getElementById("song-time").textContent = `0:00 / ${formatTime(favAudio.duration)}`;
+        });
+
+        favAudio.addEventListener("timeupdate", () => {
+            document.getElementById("song-time").textContent =
+                `${formatTime(favAudio.currentTime)} / ${formatTime(favAudio.duration || 0)}`;
+            const pct = favAudio.duration ? (favAudio.currentTime / favAudio.duration) * 100 : 0;
+            document.getElementById("progress-fill").style.width = pct + "%";
+        });
+
+        document.getElementById("progress-bar").addEventListener("click", (e) => {
+            if (!favAudio.duration) return;
+            const rect = e.currentTarget.getBoundingClientRect();
+            favAudio.currentTime = ((e.clientX - rect.left) / rect.width) * favAudio.duration;
+        });
     </script>
     
 </body>
