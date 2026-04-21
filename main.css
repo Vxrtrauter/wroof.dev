@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #0f1011;
+    background: #0c0d0e;
     opacity: 1 !important;
     color: #f8feff
 }
@@ -51,19 +51,25 @@ main {
 }
 
 .bio-frame img {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     width: 14rem;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     border: 1px solid #ffb3ff;
+}
+
+.bio-desc { 
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 .social-frame {
     background: #151718;
     border-radius: 0.7rem;
     padding: 0.8rem;
-    width: 70%;
+    width: 77%;
     overflow-wrap: break-word;
 }
 
@@ -74,3 +80,13 @@ main {
     width: 100%
 }
 
+.colored-text {
+    color: var(--main-color);
+}
+
+
+
+
+::selection {
+    background: #db65d528;
+}
