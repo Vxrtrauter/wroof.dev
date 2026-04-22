@@ -72,8 +72,59 @@ main {
     overflow-wrap: break-word;
 }
 
-.music-frame {
+.socials-box {
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.7em 4.0rem;
+    min-width: 337px;
+    width: fit-content;
+    margin-top: 0.3rem;
+    background-color: #1a1c1d;
+    padding: 19px;
+    border-radius: 12px;
+    align-content: center;
+    justify-content: center;
+}
+
+.socials-box h3 {
+    grid-column: 1 / -1;
+}
+
+.socials-box svg {
+    width: 32px;
+    height: 32px;
+}
+
+.socials-box a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.social-link {
+    color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.social-link svg {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    flex-shrink: 0;
+    /* transform: translateY(0px); */
+}
+
+.player-socials-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
     margin-top: 2rem;
+}
+
+.music-frame {
+    margin-top: 0;
 }
 
 .music-box {
@@ -83,7 +134,8 @@ main {
     padding: 11px;
     background-color: #1a1c1d;
     border-radius: 12px;
-    width: 48%;
+    width: fit-content;
+    min-width: 320px;
     margin-top: 0.3rem;
 }
 
@@ -170,6 +222,8 @@ main {
 .colored-text {
     color: var(--main-color);
 }
+
+
 
 
 
