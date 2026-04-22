@@ -83,17 +83,10 @@ main {
 }
 
 .socials-box {
-    color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 0.9em 4.0rem;
-    min-width: 337px;
-    width: fit-content;
-    margin-top: 0.3rem;
-    background-color: #1a1c1d;
-    padding: 19px;
-    border-radius: 12px;
-    align-content: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 4.7rem;
+    margin-top: 10px;
     justify-content: center;
 }
 
@@ -127,12 +120,6 @@ main {
     /* transform: translateY(0px); */
 }
 
-.player-socials-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 4rem;
-    margin-top: 2rem;
-}
 
 .music-frame {
     margin-top: 0;
