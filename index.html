@@ -10,155 +10,160 @@
 </head>
 <body>
     <main>
-        <div class="main-frame">
+        <div class="main-wrapper">
+            <img src="assets/boykisserpeek.png" class="boykisser">
+            <div class="main-frame">
 
-            
-            <div class="content-frame">
+                
+                <div class="content-frame">
 
-                <div class="bio-frame">
-                    <img src="assets/selfpic.jpg" alt="me in the alps">
+                    <div class="bio-frame">
+                        <img src="assets/selfpic.jpg" alt="me in the alps">
 
-                    <p><span class="bio-desc">Name</span>: lumi / shayaa</p>
-                    <p><span class="bio-desc">Pronouns</span>: he/him</p>
-                    <p><span class="bio-desc">Country</span>: Switzerland</p>
-                    <p><span class="bio-desc">Languages</span>: English, German, Finnish</p>
-                    <a class="sona-btn">Fursona</a>
+                        <p><span class="bio-desc">Name</span>: lumi / shayaa</p>
+                        <p><span class="bio-desc">Pronouns</span>: he/him</p>
+                        <p><span class="bio-desc">Country</span>: Switzerland</p>
+                        <p><span class="bio-desc">Languages</span>: English, German, Finnish</p>
+                        <a class="sona-btn">Fursona</a>
 
-                </div>
+                    </div>
 
-                <div class="social-frame">
-                    <h2>Haii <span class="colored-text" style="font-family: 'Arial', sans-serif">&lt;3</span></h2>
-                    <br>
-                    <p>
-                        I'm lumi or shayaa, a silly developer and (bad) producer from Switzerland 
-                        focusing on creating useful programs, heavily distorted music and enjoying the swiss alps.
-                        <br><br>I love to mess with things, create new stuff, learn more and explore the world we live in.<br>
-                        Currently, i run Windows 10 LTSC IoT Enterprise on my Desktop machine and Arch Linux on my ThinkPad.
-                    </p>
-                        
-                    <div class="widget-frame">
-                        <div class="music-frame">
-                            <div class="music-box">
-                            <img src="/assets/album covers/madewithhoney_300x300.jpg">
-                                <div class="song-info">
-                                    <h3 class="song-title">Made with Honey</h3>
-                                    <p class="song-artist">SPARKLEWOLF RADIO</p>
-                                    <p class="song-time" id="song-time">0:00 / 0:00</p>
-                                    <div class="progress-bar" id="progress-bar">
-                                        <div class="progress-fill" id="progress-fill"></div>
+                    <div class="social-frame">
+                        <h2>Haii <span class="colored-text" style="font-family: 'Arial', sans-serif">&lt;3</span></h2>
+                        <br>
+                        <p>
+                            I'm lumi or shayaa, a silly developer and (bad) producer from Switzerland 
+                            focusing on creating useful programs, heavily distorted music and enjoying the swiss alps.
+                            <br><br>I love to mess with things, create new stuff, learn more and explore the world we live in.<br>
+                            Currently, i run Windows 10 LTSC IoT Enterprise on my Desktop machine and Arch Linux on my ThinkPad.
+                        </p>
+                            
+                        <div class="widget-frame">
+                            <div class="music-frame">
+                                <div class="music-box">
+                                <img src="/assets/album covers/madewithhoney_300x300.jpg">
+                                    <div class="song-info">
+                                        <h3 class="song-title">Made with Honey</h3>
+                                        <p class="song-artist">SPARKLEWOLF RADIO</p>
+                                        <p class="song-time" id="song-time">0:00 / 0:00</p>
+                                        <div class="progress-bar" id="progress-bar">
+                                            <div class="progress-fill" id="progress-fill"></div>
+                                        </div>
                                     </div>
+
+                                    <button onclick="playFavSong()" class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                                            <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.15"/>
+                                            <path d="M10 8l6 4-6 4V8z" fill="currentColor"/>
+                                        </svg>
+                                    </button>
                                 </div>
 
-                                <button onclick="playFavSong()" class="play-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
-                                        <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.15"/>
-                                        <path d="M10 8l6 4-6 4V8z" fill="currentColor"/>
-                                    </svg>
-                                </button>
                             </div>
 
-                        </div>
+                            <div class="softwaremanager-frame">
+                                <img src="/assets/softwaremanager-logo.png">
+                                <div class="song-info">
+                                    <a href="https://softwaremanager.xyz" class="softwaremanager-title">SoftwareManager</a>
+                                    <p class="softwaremanager-description">Simply search and download software.</p>
+                            </div>
 
-                        <div class="softwaremanager-frame">
-                            <img src="/assets/softwaremanager-logo.png">
-                            <div class="song-info">
-                                <a href="https://softwaremanager.xyz" class="softwaremanager-title">SoftwareManager</a>
-                                <p class="softwaremanager-description">Simply search and download software.</p>
+
+                        </div>
+                        
+
                         </div>
 
 
                     </div>
+                </div>
+
+                <div class="footer-frame">
                     
 
+                    <div class="web-buttons">
+                        <a href="#"><img src="assets/buttons/biflag.png" width="88" height="31" alt="bi flag"></a>
+                        <a href="#"><img src="assets/buttons/fckgoogle.gif" width="88" height="31" alt="fck google"></a>
+                        <a href="#"><img src="assets/buttons/paws.gif" width="88" height="31" alt="made with my own paws"></a>
+                        <a href="#"><img src="assets/buttons/hatems.gif" width="88" height="31" alt="hate microsoft"></a>
+                        <a href="#"><img src="assets/buttons/gaywebring.gif" width="88" height="31" alt="this website is gay"></a>
+                        <a href="#"><img src="assets/buttons/monero-now.gif" width="88" height="31" alt="monero now"></a>
+                        <a href="#"><img src="assets/buttons/antinazi.gif" width="88" height="31" alt="anti-nazi"></a>
+                        <a href="#"><img src="assets/buttons/trans_nya.png" width="88" height="31" alt="nyaaaa"></a>
+                        <a href="#"><img src="assets/buttons/broslove.png" width="88" height="31" alt="bros love"></a>
+                        <a href="#"><img src="assets/buttons/flag-progress.png" width="88" height="31" alt="rainbow flag"></a>
+                        <a href="#"><img src="assets/buttons/itoddler.gif" width="88" height="31" alt="stop supporting apple"></a>
+                        <a href="#"><img src="assets/buttons/piracy.gif" width="88" height="31" alt="piracy! NOW!!!"></a>
+                        <a href="#"><img src="assets/buttons/transnow2.gif" width="88" height="31" alt="support trans people"></a>
+                        <a href="#"><img src="assets/buttons/soulseek.gif" width="88" height="31" alt="sharing is caring <3"></a>
+                        <a href="#"><img src="assets/buttons/internetprivacy.gif" width="88" height="31" alt="internet privacy"></a>
+                        <a href="#"><img src="assets/buttons/anythingbutchrome.gif" width="88" height="31" alt="anything but chrome"></a>
+                        <a href="#"><img src="assets/buttons/keep.gif" width="88" height="31" alt="no to web3"></a>
+                        <a href="#"><img src="assets/buttons/nclinux.gif" width="88" height="31" alt="linux today"></a>
+                        <a href="#"><img src="assets/buttons/furnow.gif" width="88" height="31" alt="be FURRY!"></a>
+                        <a href="#"><img src="assets/buttons/archlinux.gif" width="88" height="31" alt="i use Arch btw"></a>
+                        <a href="#"><img src="assets/buttons/finnland.gif" width="88" height="31" alt="finland is COOL"></a>
+                        <a href="https://github.com/Vxrtrauter/wroof.dev"><img src="assets/buttons/open_source.png" width="88" height="31" alt="OPEN SOURCE"></a>
                     </div>
 
+                        <div class="socials-box">
+                            <a href="https://signal.me/#eu/-jH0I_J4TpHb3CsAca7yGZHEVrCpTX-kimJ20CyO5GuRZOAlW35FzZo2AjWK_DVC" class="social-link">
+                            <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 3.816c-6.726 0.004-12.178 5.457-12.178 12.184 0 2.404 0.696 4.645 1.897 6.533l-0.029-0.049-1.172 4.999 4.999-1.172c1.841 1.176 4.086 1.874 6.493 1.874 6.729 0 12.184-5.455 12.184-12.184s-5.455-12.184-12.184-12.184c-0.004 0-0.007 0-0.011 0h0.001zM9.041 27.688l-2.012 0.469 0.319 1.368 1.481-0.344c1.024 0.57 2.211 1.044 3.46 1.36l0.103 0.022 0.337-1.363c-1.394-0.354-2.619-0.875-3.738-1.555l0.060 0.034zM2.48 24.642l1.368 0.319 0.469-2.012c-0.643-1.062-1.162-2.291-1.492-3.596l-0.020-0.093-1.362 0.337c0.338 1.352 0.812 2.539 1.421 3.64l-0.039-0.076zM5.782 28.443l-2.903 0.679 0.677-2.903-1.368-0.321-0.677 2.903c-0.024 0.096-0.037 0.207-0.037 0.321 0 0.776 0.629 1.406 1.406 1.406 0.114 0 0.224-0.014 0.33-0.039l-0.010 0.002 2.9-0.665zM13.964 2.561c0.612-0.097 1.317-0.152 2.036-0.152s1.424 0.055 2.112 0.162l-0.077-0.010 0.214-1.39c-0.675-0.107-1.454-0.169-2.247-0.169s-1.572 0.061-2.332 0.18l0.085-0.011zM28.84 8.248l-1.205 0.721c0.666 1.083 1.201 2.337 1.538 3.669l0.020 0.094 1.363-0.337c-0.394-1.571-0.984-2.953-1.754-4.212l0.037 0.065zM5.061 7.938c0.822-1.107 1.772-2.057 2.843-2.853l0.036-0.026-0.844-1.132c-1.218 0.905-2.263 1.95-3.139 3.128l-0.028 0.040zM24.060 5.059c1.107 0.822 2.057 1.772 2.853 2.843l0.026 0.036 1.132-0.843c-0.905-1.218-1.95-2.263-3.128-3.139l-0.040-0.028zM26.939 24.063c-0.822 1.106-1.772 2.055-2.843 2.851l-0.036 0.026 0.835 1.132c1.221-0.905 2.269-1.95 3.148-3.128l0.028-0.040zM18.036 29.44c-0.612 0.097-1.317 0.152-2.036 0.152s-1.424-0.055-2.112-0.162l0.077 0.010-0.212 1.39c0.675 0.107 1.454 0.169 2.247 0.169s1.572-0.061 2.332-0.18l-0.085 0.011zM30.557 19.599l-1.362-0.337c-0.358 1.428-0.893 2.683-1.593 3.827l0.034-0.059 1.205 0.726c0.734-1.196 1.324-2.581 1.695-4.053l0.022-0.103zM29.59 16c0 0.003 0 0.006 0 0.009 0 0.716-0.055 1.419-0.162 2.104l0.010-0.076 1.39 0.21c0.107-0.675 0.169-1.454 0.169-2.247s-0.061-1.572-0.18-2.331l0.011 0.085-1.39 0.211c0.097 0.61 0.152 1.312 0.152 2.028 0 0.003 0 0.006 0 0.009v-0zM23.752 28.839l-0.722-1.205c-1.083 0.666-2.337 1.201-3.669 1.538l-0.094 0.020 0.337 1.363c1.572-0.394 2.954-0.984 4.213-1.754l-0.065 0.037zM2.41 15.999c0-0.003 0-0.006 0-0.009 0-0.716 0.055-1.419 0.162-2.104l-0.010 0.076-1.39-0.21c-0.107 0.675-0.169 1.454-0.169 2.247s0.061 1.572 0.179 2.331l-0.011-0.085 1.39-0.211c-0.097-0.61-0.152-1.312-0.152-2.028 0-0.002 0-0.005 0-0.007v0zM3.16 8.248c-0.734 1.195-1.323 2.578-1.695 4.048l-0.022 0.103 1.362 0.337c0.358-1.428 0.894-2.683 1.595-3.827l-0.034 0.059zM19.599 1.442l-0.337 1.362c1.428 0.358 2.683 0.893 3.827 1.593l-0.059-0.034 0.726-1.205c-1.196-0.734-2.581-1.324-4.053-1.695l-0.103-0.022zM12.401 1.442l0.337 1.362c-1.428 0.358-2.683 0.893-3.827 1.593l0.059-0.034-0.722-1.205c1.195-0.734 2.579-1.323 4.049-1.695l0.103-0.022z"></path>
+                            </svg>
+                            Signal
+                            </a>
 
-                </div>
-            </div>
-
-            <div class="footer-frame">
-                
-
-                <div class="web-buttons">
-                    <a href="#"><img src="assets/buttons/biflag.png" width="88" height="31" alt="bi flag"></a>
-                    <a href="#"><img src="assets/buttons/fckgoogle.gif" width="88" height="31" alt="fck google"></a>
-                    <a href="#"><img src="assets/buttons/paws.gif" width="88" height="31" alt="made with my own paws"></a>
-                    <a href="#"><img src="assets/buttons/hatems.gif" width="88" height="31" alt="hate microsoft"></a>
-                    <a href="#"><img src="assets/buttons/gaywebring.gif" width="88" height="31" alt="this website is gay"></a>
-                    <a href="#"><img src="assets/buttons/monero-now.gif" width="88" height="31" alt="monero now"></a>
-                    <a href="#"><img src="assets/buttons/antinazi.gif" width="88" height="31" alt="anti-nazi"></a>
-                    <a href="#"><img src="assets/buttons/trans_nya.png" width="88" height="31" alt="nyaaaa"></a>
-                    <a href="#"><img src="assets/buttons/broslove.png" width="88" height="31" alt="bros love"></a>
-                    <a href="#"><img src="assets/buttons/flag-progress.png" width="88" height="31" alt="rainbow flag"></a>
-                    <a href="#"><img src="assets/buttons/itoddler.gif" width="88" height="31" alt="stop supporting apple"></a>
-                    <a href="#"><img src="assets/buttons/piracy.gif" width="88" height="31" alt="piracy! NOW!!!"></a>
-                    <a href="#"><img src="assets/buttons/transnow2.gif" width="88" height="31" alt="support trans people"></a>
-                    <a href="#"><img src="assets/buttons/soulseek.gif" width="88" height="31" alt="sharing is caring <3"></a>
-                    <a href="#"><img src="assets/buttons/internetprivacy.gif" width="88" height="31" alt="internet privacy"></a>
-                    <a href="#"><img src="assets/buttons/anythingbutchrome.gif" width="88" height="31" alt="anything but chrome"></a>
-                    <a href="#"><img src="assets/buttons/keep.gif" width="88" height="31" alt="no to web3"></a>
-                    <a href="#"><img src="assets/buttons/nclinux.gif" width="88" height="31" alt="linux today"></a>
-                    <a href="#"><img src="assets/buttons/furnow.gif" width="88" height="31" alt="be FURRY!"></a>
-                    <a href="#"><img src="assets/buttons/archlinux.gif" width="88" height="31" alt="i use Arch btw"></a>
-                    <a href="#"><img src="assets/buttons/finnland.gif" width="88" height="31" alt="finland is COOL"></a>
-                    <a href="https://github.com/Vxrtrauter/wroof.dev"><img src="assets/buttons/open_source.png" width="88" height="31" alt="OPEN SOURCE"></a>
-                </div>
-
-                    <div class="socials-box">
-                        <a href="https://signal.me/#eu/-jH0I_J4TpHb3CsAca7yGZHEVrCpTX-kimJ20CyO5GuRZOAlW35FzZo2AjWK_DVC" class="social-link">
-                        <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 3.816c-6.726 0.004-12.178 5.457-12.178 12.184 0 2.404 0.696 4.645 1.897 6.533l-0.029-0.049-1.172 4.999 4.999-1.172c1.841 1.176 4.086 1.874 6.493 1.874 6.729 0 12.184-5.455 12.184-12.184s-5.455-12.184-12.184-12.184c-0.004 0-0.007 0-0.011 0h0.001zM9.041 27.688l-2.012 0.469 0.319 1.368 1.481-0.344c1.024 0.57 2.211 1.044 3.46 1.36l0.103 0.022 0.337-1.363c-1.394-0.354-2.619-0.875-3.738-1.555l0.060 0.034zM2.48 24.642l1.368 0.319 0.469-2.012c-0.643-1.062-1.162-2.291-1.492-3.596l-0.020-0.093-1.362 0.337c0.338 1.352 0.812 2.539 1.421 3.64l-0.039-0.076zM5.782 28.443l-2.903 0.679 0.677-2.903-1.368-0.321-0.677 2.903c-0.024 0.096-0.037 0.207-0.037 0.321 0 0.776 0.629 1.406 1.406 1.406 0.114 0 0.224-0.014 0.33-0.039l-0.010 0.002 2.9-0.665zM13.964 2.561c0.612-0.097 1.317-0.152 2.036-0.152s1.424 0.055 2.112 0.162l-0.077-0.010 0.214-1.39c-0.675-0.107-1.454-0.169-2.247-0.169s-1.572 0.061-2.332 0.18l0.085-0.011zM28.84 8.248l-1.205 0.721c0.666 1.083 1.201 2.337 1.538 3.669l0.020 0.094 1.363-0.337c-0.394-1.571-0.984-2.953-1.754-4.212l0.037 0.065zM5.061 7.938c0.822-1.107 1.772-2.057 2.843-2.853l0.036-0.026-0.844-1.132c-1.218 0.905-2.263 1.95-3.139 3.128l-0.028 0.040zM24.060 5.059c1.107 0.822 2.057 1.772 2.853 2.843l0.026 0.036 1.132-0.843c-0.905-1.218-1.95-2.263-3.128-3.139l-0.040-0.028zM26.939 24.063c-0.822 1.106-1.772 2.055-2.843 2.851l-0.036 0.026 0.835 1.132c1.221-0.905 2.269-1.95 3.148-3.128l0.028-0.040zM18.036 29.44c-0.612 0.097-1.317 0.152-2.036 0.152s-1.424-0.055-2.112-0.162l0.077 0.010-0.212 1.39c0.675 0.107 1.454 0.169 2.247 0.169s1.572-0.061 2.332-0.18l-0.085 0.011zM30.557 19.599l-1.362-0.337c-0.358 1.428-0.893 2.683-1.593 3.827l0.034-0.059 1.205 0.726c0.734-1.196 1.324-2.581 1.695-4.053l0.022-0.103zM29.59 16c0 0.003 0 0.006 0 0.009 0 0.716-0.055 1.419-0.162 2.104l0.010-0.076 1.39 0.21c0.107-0.675 0.169-1.454 0.169-2.247s-0.061-1.572-0.18-2.331l0.011 0.085-1.39 0.211c0.097 0.61 0.152 1.312 0.152 2.028 0 0.003 0 0.006 0 0.009v-0zM23.752 28.839l-0.722-1.205c-1.083 0.666-2.337 1.201-3.669 1.538l-0.094 0.020 0.337 1.363c1.572-0.394 2.954-0.984 4.213-1.754l-0.065 0.037zM2.41 15.999c0-0.003 0-0.006 0-0.009 0-0.716 0.055-1.419 0.162-2.104l-0.010 0.076-1.39-0.21c-0.107 0.675-0.169 1.454-0.169 2.247s0.061 1.572 0.179 2.331l-0.011-0.085 1.39-0.211c-0.097-0.61-0.152-1.312-0.152-2.028 0-0.002 0-0.005 0-0.007v0zM3.16 8.248c-0.734 1.195-1.323 2.578-1.695 4.048l-0.022 0.103 1.362 0.337c0.358-1.428 0.894-2.683 1.595-3.827l-0.034 0.059zM19.599 1.442l-0.337 1.362c1.428 0.358 2.683 0.893 3.827 1.593l-0.059-0.034 0.726-1.205c-1.196-0.734-2.581-1.324-4.053-1.695l-0.103-0.022zM12.401 1.442l0.337 1.362c-1.428 0.358-2.683 0.893-3.827 1.593l0.059-0.034-0.722-1.205c1.195-0.734 2.579-1.323 4.049-1.695l0.103-0.022z"></path>
-                        </svg>
-                        Signal
-                        </a>
-
-                        <a href="https://github.com/Vxrtrauter" class="social-link">
-                            <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <defs></defs>
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)">
-                                        <g id="icons" transform="translate(56.000000, 160.000000)">
-                                            <path fill="currentColor" d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"></path>
+                            <a href="https://github.com/Vxrtrauter" class="social-link">
+                                <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path fill="currentColor" d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"></path>
+                                            </g>
                                         </g>
                                     </g>
-                                </g>
-                            </svg>
-                            GitHub
-                        </a>
+                                </svg>
+                                GitHub
+                            </a>
 
-                        <a onclick="discordAlert()" style="cursor: pointer;" class="social-link">
-                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor" d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z"/>
-                            </svg>
-                            Discord
-                        </a>
+                            <a onclick="discordAlert()" style="cursor: pointer;" class="social-link">
+                                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z"/>
+                                </svg>
+                                Discord
+                            </a>
 
-                        <a href="https://reddit.com/u/Vxrtrauter" class="social-link">
-                            <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.606 20.986c-0.225 0.001-0.407 0.183-0.407 0.408 0 0.112 0.045 0.214 0.118 0.288l-0-0c0.952 0.716 2.155 1.146 3.457 1.146 0.085 0 0.17-0.002 0.255-0.006l-0.012 0c0.081 0.004 0.175 0.006 0.27 0.006 1.294 0 2.488-0.431 3.445-1.158l-0.014 0.010c0.077-0.081 0.124-0.19 0.124-0.311 0-0.101-0.033-0.194-0.089-0.269l0.001 0.001c-0.074-0.074-0.177-0.119-0.29-0.119s-0.215 0.045-0.29 0.119l0-0c-0.799 0.575-1.798 0.919-2.877 0.919-0.092 0-0.184-0.003-0.275-0.007l0.013 0.001c-0.082 0.005-0.178 0.008-0.274 0.008-1.075 0-2.070-0.345-2.88-0.93l0.014 0.010c-0.074-0.073-0.175-0.119-0.287-0.119-0.001 0-0.002 0-0.003 0h0zM19.436 16c-0.861 0.001-1.56 0.699-1.56 1.561s0.699 1.561 1.561 1.561 1.561-0.699 1.561-1.561v0c-0.002-0.862-0.7-1.56-1.562-1.561h-0zM12.563 16c0.861 0 1.56 0.699 1.56 1.56s-0.699 1.56-1.56 1.56-1.56-0.699-1.56-1.56c0-0.861 0.698-1.56 1.56-1.56h0zM22.261 6.933c0.852 0.006 1.54 0.698 1.54 1.551 0 0.857-0.694 1.551-1.551 1.551-0.828 0-1.505-0.65-1.549-1.467l-0-0.004-3.245-0.684-1 4.682c2.185 0.049 4.201 0.737 5.878 1.884l-0.037-0.024c0.38-0.379 0.905-0.614 1.485-0.614 0.008 0 0.017 0 0.025 0h-0.001c1.21 0.001 2.191 0.982 2.192 2.192v0c-0.007 0.88-0.513 1.64-1.249 2.011l-0.013 0.006c0.033 0.191 0.052 0.412 0.052 0.637 0 0.005 0 0.009-0 0.014v-0.001c0 3.367-3.911 6.086-8.752 6.086s-8.752-2.719-8.752-6.086c0-0.001 0-0.003 0-0.005 0-0.234 0.020-0.463 0.057-0.687l-0.003 0.024c-0.771-0.35-1.298-1.114-1.298-2.001 0-1.21 0.981-2.191 2.191-2.191 0 0 0.001 0 0.001 0h-0c0.586 0.006 1.116 0.238 1.509 0.613l-0.001-0.001c1.66-1.148 3.711-1.841 5.924-1.858l0.004-0 1.106-5.226c0.028-0.103 0.090-0.189 0.173-0.245l0.002-0.001c0.063-0.037 0.139-0.059 0.22-0.059 0.027 0 0.054 0.003 0.080 0.007l-0.003-0 3.631 0.771c0.247-0.522 0.77-0.876 1.375-0.876 0.003 0 0.007 0 0.010 0h-0.001zM16 1.004c0 0 0 0-0 0-8.282 0-14.996 6.714-14.996 14.996s6.714 14.996 14.996 14.996c8.282 0 14.996-6.714 14.996-14.996 0-4.141-1.678-7.89-4.392-10.604v0c-2.714-2.714-6.463-4.392-10.604-4.392v0z"></path>
-                            </svg>
-                            Reddit
-                        </a>
+                            <a href="https://reddit.com/u/Vxrtrauter" class="social-link">
+                                <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.606 20.986c-0.225 0.001-0.407 0.183-0.407 0.408 0 0.112 0.045 0.214 0.118 0.288l-0-0c0.952 0.716 2.155 1.146 3.457 1.146 0.085 0 0.17-0.002 0.255-0.006l-0.012 0c0.081 0.004 0.175 0.006 0.27 0.006 1.294 0 2.488-0.431 3.445-1.158l-0.014 0.010c0.077-0.081 0.124-0.19 0.124-0.311 0-0.101-0.033-0.194-0.089-0.269l0.001 0.001c-0.074-0.074-0.177-0.119-0.29-0.119s-0.215 0.045-0.29 0.119l0-0c-0.799 0.575-1.798 0.919-2.877 0.919-0.092 0-0.184-0.003-0.275-0.007l0.013 0.001c-0.082 0.005-0.178 0.008-0.274 0.008-1.075 0-2.070-0.345-2.88-0.93l0.014 0.010c-0.074-0.073-0.175-0.119-0.287-0.119-0.001 0-0.002 0-0.003 0h0zM19.436 16c-0.861 0.001-1.56 0.699-1.56 1.561s0.699 1.561 1.561 1.561 1.561-0.699 1.561-1.561v0c-0.002-0.862-0.7-1.56-1.562-1.561h-0zM12.563 16c0.861 0 1.56 0.699 1.56 1.56s-0.699 1.56-1.56 1.56-1.56-0.699-1.56-1.56c0-0.861 0.698-1.56 1.56-1.56h0zM22.261 6.933c0.852 0.006 1.54 0.698 1.54 1.551 0 0.857-0.694 1.551-1.551 1.551-0.828 0-1.505-0.65-1.549-1.467l-0-0.004-3.245-0.684-1 4.682c2.185 0.049 4.201 0.737 5.878 1.884l-0.037-0.024c0.38-0.379 0.905-0.614 1.485-0.614 0.008 0 0.017 0 0.025 0h-0.001c1.21 0.001 2.191 0.982 2.192 2.192v0c-0.007 0.88-0.513 1.64-1.249 2.011l-0.013 0.006c0.033 0.191 0.052 0.412 0.052 0.637 0 0.005 0 0.009-0 0.014v-0.001c0 3.367-3.911 6.086-8.752 6.086s-8.752-2.719-8.752-6.086c0-0.001 0-0.003 0-0.005 0-0.234 0.020-0.463 0.057-0.687l-0.003 0.024c-0.771-0.35-1.298-1.114-1.298-2.001 0-1.21 0.981-2.191 2.191-2.191 0 0 0.001 0 0.001 0h-0c0.586 0.006 1.116 0.238 1.509 0.613l-0.001-0.001c1.66-1.148 3.711-1.841 5.924-1.858l0.004-0 1.106-5.226c0.028-0.103 0.090-0.189 0.173-0.245l0.002-0.001c0.063-0.037 0.139-0.059 0.22-0.059 0.027 0 0.054 0.003 0.080 0.007l-0.003-0 3.631 0.771c0.247-0.522 0.77-0.876 1.375-0.876 0.003 0 0.007 0 0.010 0h-0.001zM16 1.004c0 0 0 0-0 0-8.282 0-14.996 6.714-14.996 14.996s6.714 14.996 14.996 14.996c8.282 0 14.996-6.714 14.996-14.996 0-4.141-1.678-7.89-4.392-10.604v0c-2.714-2.714-6.463-4.392-10.604-4.392v0z"></path>
+                                </svg>
+                                Reddit
+                            </a>
 
-                        <a href="https://lumiissleepy.bandcamp.com/" class="social-link">
-                            <svg fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Bandcamp</title><path d="M0 18.75l7.437-13.5H24l-7.438 13.5H0z"/></svg>
-                            Bandcamp
-                        </a>
+                            <a href="https://lumiissleepy.bandcamp.com/" class="social-link">
+                                <svg fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Bandcamp</title><path d="M0 18.75l7.437-13.5H24l-7.438 13.5H0z"/></svg>
+                                Bandcamp
+                            </a>
 
-                        <a href="https://soundcloud.com/lumiissleepy" class="social-link">
-                            <svg fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SoundCloud</title><path d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.747.747 0 0 1 .452-.724s.75-.513 2.333-.513a5.364 5.364 0 0 1 2.763.755 5.433 5.433 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373ZM10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0ZM9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0Zm-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0Zm-1.647.77a26.108 26.108 0 0 1-.008 7.147.272.272 0 0 1-.542 0 27.955 27.955 0 0 1 0-7.147.275.275 0 0 1 .55 0Zm-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0Zm-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0Z"/></svg>
-                            SoundCloud
-                        </a>
+                            <a href="https://soundcloud.com/lumiissleepy" class="social-link">
+                                <svg fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SoundCloud</title><path d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.747.747 0 0 1 .452-.724s.75-.513 2.333-.513a5.364 5.364 0 0 1 2.763.755 5.433 5.433 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373ZM10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0ZM9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0Zm-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0Zm-1.647.77a26.108 26.108 0 0 1-.008 7.147.272.272 0 0 1-.542 0 27.955 27.955 0 0 1 0-7.147.275.275 0 0 1 .55 0Zm-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0Zm-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0Z"/></svg>
+                                SoundCloud
+                            </a>
 
-                    </div>
+                        </div>
+                    
+                </div>
+
+                </div>
+
                 
-            </div>
 
             </div>
-
-            
 
         </div>
+        
     </main>
 
     <script>

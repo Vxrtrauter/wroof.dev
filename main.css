@@ -24,16 +24,30 @@ main {
     flex: 1;
 }
 
+.main-wrapper {
+    position: relative;
+    width: 66.6rem;
+    margin: 50px auto;
+}
+
 .main-frame {
     background: #1a1c1d;
     width: 66.6rem;
-    margin: 50px auto;
     padding: 0.8rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     border: 1px solid #ffb3ff;
+    z-index: 1;
+}
+
+.boykisser {
+    position: absolute;
+    width: 270px;
+    top:-168px;  
+    left: 700px; 
+    z-index: -1;
 }
 
 .content-frame {
