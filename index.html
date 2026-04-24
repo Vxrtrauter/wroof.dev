@@ -36,35 +36,39 @@
                         Currently, i run Windows 10 LTSC IoT Enterprise on my Desktop machine and Arch Linux on my ThinkPad.
                     </p>
                         
-                    <div class="softwaremanager-frame">
-                        <img src="/assets/softwaremanager-logo.png">
-                        <div class="song-info">
-                            <a href="https://softwaremanager.xyz" class="softwaremanager-title">SoftwareManager</a>
-                            <p class="softwaremanager-description">Simply search and download software.</p>
-                        </div>
+                    <div class="widget-frame">
+                        <div class="music-frame">
+                            <div class="music-box">
+                            <img src="/assets/album covers/madewithhoney_300x300.jpg">
+                                <div class="song-info">
+                                    <h3 class="song-title">Made with Honey</h3>
+                                    <p class="song-artist">SPARKLEWOLF RADIO</p>
+                                    <p class="song-time" id="song-time">0:00 / 0:00</p>
+                                    <div class="progress-bar" id="progress-bar">
+                                        <div class="progress-fill" id="progress-fill"></div>
+                                    </div>
+                                </div>
 
-                    </div>
-
-                    <div class="music-frame">
-                        <h3>Favourite Song</h3>
-                        <div class="music-box">
-                        <img src="/assets/album covers/madewithhoney_300x300.jpg">
-                        <div class="song-info">
-                            <h3 class="song-title">Made with Honey</h3>
-                            <p class="song-artist">SPARKLEWOLF RADIO</p>
-                            <p class="song-time" id="song-time">0:00 / 0:00</p>
-                            <div class="progress-bar" id="progress-bar">
-                                <div class="progress-fill" id="progress-fill"></div>
+                                <button onclick="playFavSong()" class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                                        <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.15"/>
+                                        <path d="M10 8l6 4-6 4V8z" fill="currentColor"/>
+                                    </svg>
+                                </button>
                             </div>
+
                         </div>
 
-                        <button onclick="playFavSong()" class="play-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
-                                <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.15"/>
-                                <path d="M10 8l6 4-6 4V8z" fill="currentColor"/>
-                            </svg>
-                        </button>
+                        <div class="softwaremanager-frame">
+                            <img src="/assets/softwaremanager-logo.png">
+                            <div class="song-info">
+                                <a href="https://softwaremanager.xyz" class="softwaremanager-title">SoftwareManager</a>
+                                <p class="softwaremanager-description">Simply search and download software.</p>
+                        </div>
+
+
                     </div>
+                    
 
                     </div>
 
