@@ -103,6 +103,7 @@ main {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    margin-top: 0.1rem;
 }
 
 .social-link {
@@ -119,6 +120,40 @@ main {
     color: var(--main-color)
     /* transform: translateY(0px); */
 }
+
+.softwaremanager-frame {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 11px;
+    background-color: #1a1c1d;
+    border-radius: 12px;
+    width: fit-content;
+    min-width: 320px;
+    margin-top: 0.3rem;
+}
+
+.softwaremanager-frame img {
+    border-radius: 10px;
+    width: 5rem;
+    height: auto;
+}
+
+.softwaremanager-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.softwaremanager-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
 
 
 .music-frame {
