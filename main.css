@@ -96,6 +96,28 @@ main {
     overflow-wrap: break-word;
 }
 
+.misc-box a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0.1rem;
+}
+
+.misc-button {
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.misc-button svg {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    flex-shrink: 0;
+    color: var(--main-color)
+    /* transform: translateY(0px); */
+}
+
 .socials-box {
     display: flex;
     align-items: flex-start;
