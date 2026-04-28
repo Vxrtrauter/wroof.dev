@@ -1,2 +1,6 @@
-/pgp.asc
+/pgp
   Content-Type: text/plain; charset=utf-8
+
+/pgp.asc
+  Content-Type: application/octet-stream
+  Content-Disposition: attachment; filename="pgp.asc"
