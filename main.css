@@ -39,15 +39,24 @@ main {
     flex-direction: column;
     gap: 0.8rem;
     border: 1px solid #ffb3ff;
-    z-index: 1;
+    position: relative !important; 
+    z-index: 1 !important;
 }
 
 .boykisser {
+    display: block;
     position: absolute;
     width: 270px;
-    top:-168px;  
-    left: 700px; 
-    z-index: -1;
+    top: -168px;
+    left: 700px;
+    z-index: 0; 
+    cursor: pointer;
+}
+
+.boykisser img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .content-frame {
