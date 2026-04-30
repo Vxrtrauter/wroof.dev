@@ -59,6 +59,15 @@ main {
     display: block;
 }
 
+.click-indicator {
+    position: absolute;
+    top: -34px;
+    left: 658px;
+    width: 230px;
+    z-index: 5;
+    pointer-events: none; 
+}
+
 .content-frame {
     display: flex;
     gap: 0 0.8rem;
