@@ -61,11 +61,12 @@ main {
 
 .click-indicator {
     position: absolute;
-    top: -34px;
-    left: 658px;
-    width: 230px;
+    top: -240px;
+    left: 540px;
+    width: 250px;
     z-index: 5;
     pointer-events: none; 
+    rotate: -18deg;
 }
 
 .content-frame {
